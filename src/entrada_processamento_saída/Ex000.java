@@ -16,9 +16,9 @@ public class Ex000 {
 			
 			soma = a + b;
 			
-			//System.out.printf("A soma é: %d", soma);
+			//System.out.printf("A soma de: %d", soma);
 			
-			System.out.printf("A soma é: %d + %d = %d\n", a, b, soma);
+			System.out.printf("A soma de: \n%d + %d = %d", a, b, soma);
 		}
 	}
 

@@ -1,22 +1,27 @@
-package entrada_processamento_saída;
+package estrutura_de_decisão;
 
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex12 {
 
 	public static void main(String[] args) {
 		try (Scanner ler = new Scanner(System.in)) {
-			int a, b, area;
+			double a, b, area;
 			
 			System.out.printf("Digite a base do seu retângulo: ");
-			a = ler.nextInt();
+			a = ler.nextDouble();
 			
 			System.out.printf("Digite a altura do seu retângulo: ");
-			b = ler.nextInt();
+			b = ler.nextDouble();
 			
 			area = a * b;
-		
-		    System.out.printf("A área do triângulo é: %d", area);
+		    
+			if (area>100) {
+				 System.out.printf("Terreno grande.");
+			} else if (area<100) {
+				System.out.printf("Terreno pequeno.");
+			}
+		    
 		}
 	}
 		
